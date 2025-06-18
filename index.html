@@ -2,6 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bubucolic1111 的個人網站</title>
     <style>
         body {
@@ -9,7 +10,8 @@
             background-color: #f4f4f4;
             color: #333;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
+            margin: 0;
         }
         .avatar {
             width: 120px;
@@ -24,23 +26,30 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
         .btn:hover {
             background-color: #388E3C;
         }
         .resume-preview {
-            width: 300px;
+            max-width: 300px;
+            width: 100%;
             border: 1px solid #ccc;
             border-radius: 8px;
             margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .resume-preview { max-width: 100%; }
+            .btn { display: block; margin: 10px auto; }
         }
     </style>
 </head>
 <body>
     <!-- GitHub 頭像 -->
-    <img src="https://github.com/bubucolic1111.png" class="avatar" alt="個人頭像">
+    <img src="https://github.com/bubucolic1111.png" class="avatar" alt="個人頭像" />
     
-    <h1>嗨，我是 bucolic1111 👋</h1>
+    <h1>嗨，我是 bubucolic1111 👋</h1>
     <p>資訊管理系學生｜熱愛資料整理、AI 技術應用與系統開發設計</p>
 
     <h2>🎯 我的目標</h2>
@@ -52,7 +61,7 @@
     <h2>📄 我的履歷</h2>
     <p>點圖可放大，或直接下載：</p>
     <a href="resume.jpg" target="_blank">
-        <img src="resume.jpg" alt="履歷圖片" class="resume-preview">
+        <img src="resume.jpg" alt="履歷圖片" class="resume-preview" />
     </a>
     <br>
     <a class="btn" href="resume.jpg" download>📥 下載我的履歷圖檔</a>
